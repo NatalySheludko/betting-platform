@@ -1,0 +1,38 @@
+.container {
+  background-color: var(--blue-extra-dark);
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+
+.pageNav {
+  display: flex;
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+
+.iconGift,
+.iconIPhone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.navOptions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

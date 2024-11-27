@@ -1,0 +1,43 @@
+.section {
+	padding-bottom: 10px;
+}
+
+.container {
+  display: flex;	
+  align-items: center;
+  gap: 40px;
+  max-width: 925px;
+  margin: 0 auto;
+  padding: 25px 20px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.mobileAppText {
+  width: 666px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.mobileAppLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  border-radius: 16px;
+  color: #fff;
+  background-color: #1a3769;
+}
+
+.iconApple,
+.iconAndroid {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}

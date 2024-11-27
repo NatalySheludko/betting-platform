@@ -1,0 +1,95 @@
+.section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.container {
+  position: relative;
+  padding-top: 10px;
+  max-width: 925px;
+  margin: 0 auto;
+  padding: 41px 20px 52px 20px;
+  border-radius: 6px;
+  background-color: rgba(20, 30, 85, 0.6);
+  background-image: linear-gradient(
+      rgba(20, 30, 85, 0.6),
+      rgba(20, 30, 85, 0.6)
+    ),
+    url(/images/hero/stadium-1x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heroWaveDecoration {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 925px;
+  height: 384px;
+  z-index: 1;
+}
+
+.heroPlayerDecoration {
+  position: absolute;
+  bottom: 0px;
+  right: 46px;
+  width: 284px;
+  height: 384px;
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative; /* Stacks above decorative images */
+  z-index: 2; /* Ensure content is above the images */
+}
+
+.heroRatingWrap {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.heroScore {
+  margin-right: 8px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.heroRating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.heroRatingIcon {
+  width: 24px;
+  height: 24px;
+  fill: #ffc512;
+}
+
+.heroTitle {
+  width: 538px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.heroCustomBtn {
+  margin-bottom: 10px;
+  border: 1px solid #fff;
+}
+
+.heroLegalDisclaimer {
+  padding-left: 57px;
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 1.5;
+  color: #fff;
+}
