@@ -6,25 +6,30 @@ import Footer from '../Footer/Footer';
 import Faq from '../Faq/Faq';
 import Loader from '../Loader/Loader';
 
-import css from './Layout.module.css';
+//import css from './Layout.module.css';
 
 export default function Layout() {
   return (
     <div>
-      <Header />
-      <main className={css.layout}>
+      <header>
+        <Header />
+      </header>
+      <main>
         <Suspense
           fallback={
-            <div className={css.layoutLoader}>
+            <div>
               <Loader />
             </div>
           }
         >
           <Outlet />
         </Suspense>
+
+        <Faq />
       </main>
-      <Faq />
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

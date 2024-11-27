@@ -1,6 +1,7 @@
 body {
-  background-color: #680747;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color: #192a32;
+  background-color: var(--blue-darker);
 }
 
 h1,
