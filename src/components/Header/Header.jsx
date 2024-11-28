@@ -13,7 +13,7 @@ export default function Header() {
     <div className={css.container}>
       <div className={css.navContainer}>
         <nav className={css.pageNav}>
-          <Logo />
+          <Logo size="small" />
           <ul className={css.navMenu}>
             <HeaderNavLink
               to="/"

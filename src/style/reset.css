@@ -1,7 +1,5 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  color: #192a32;
-  background-color: var(--blue-darker);
+* {
+  box-sizing: border-box;
 }
 
 h1,

@@ -20,7 +20,7 @@ export default function MobileApp() {
           <span>
             <DiAndroid className={css.iconAndroid} aria-label="Android" />
           </span>
-          <span className={css.mobileAppLinkText}>mobile app</span>
+          <span>mobile app</span>
         </Link>
       </div>
     </section>

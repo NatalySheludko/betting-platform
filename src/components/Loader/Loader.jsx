@@ -1,19 +1,18 @@
 import css from '../Loader/Loader.module.css';
 
-import { Comment } from 'react-loader-spinner';
+import { Blocks } from 'react-loader-spinner';
 
 export default function Loader() {
   return (
     <div className={css.loader}>
-      <Comment
-        visible={true}
+      <Blocks
         height="80"
         width="80"
-        ariaLabel="comment-loading"
+        color="#4fa94d"
+        ariaLabel="blocks-loading"
         wrapperStyle={{}}
-        wrapperClass="comment-wrapper"
-        color="#fff"
-        backgroundColor="#F4442E"
+        wrapperClass="blocks-wrapper"
+        visible={true}
       />
     </div>
   );

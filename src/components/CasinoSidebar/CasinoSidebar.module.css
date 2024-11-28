@@ -1,7 +1,9 @@
 .section {
   padding-top: 10px;
+}
+
+.container {
   position: relative;
-  width: 295px;
   border-radius: 6px;
   background-color: #fff;
 }

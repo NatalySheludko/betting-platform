@@ -1,13 +1,11 @@
 .section {
-	padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .container {
-  display: flex;	
+  display: flex;
   align-items: center;
   gap: 40px;
-  max-width: 925px;
-  margin: 0 auto;
   padding: 25px 20px;
   border-radius: 6px;
   background-color: #fff;

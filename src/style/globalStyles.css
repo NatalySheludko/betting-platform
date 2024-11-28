@@ -17,6 +17,33 @@
   --green: #2e9344;
   --yellow: #ffc512;
   --orange: #ec622b;
-	
+
   --box-shadow: 0 4px 18px 0 rgba(14, 24, 17, 0.25);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #192a32;
+  background-color: var(--blue-darker);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }

@@ -1,0 +1,62 @@
+.section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.container {
+  padding: 32px 20px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.ratingsMenuItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 16px 24px;
+  width: 885px;
+  background-color: #80bef8;
+}
+
+.ratingsMenuItem:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.menuItemTitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.itemRatingWrap {
+  display: flex;
+  align-items: center;
+}
+
+.itemStarsWrap {
+  display: flex;
+  margin-right: 16px;
+  gap: 8px;
+}
+
+.ratingIconStarActive {
+  width: 32px;
+  height: 32px;
+  fill: #ffc512;
+}
+
+.ratingIconStar {
+  width: 32px;
+  height: 32px;
+  fill: #c3d5cf;
+}
+
+.menuItemScore {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+}

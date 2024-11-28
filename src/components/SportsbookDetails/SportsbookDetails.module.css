@@ -1,0 +1,49 @@
+.section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.container {
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.sportsbookWrap,
+.lineupWrap,
+.betTypesWrap,
+.liveBetWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 32px 20px;
+}
+
+.sportsbookTitle {
+  margin-bottom: 24px;
+}
+
+.sportsbookMenuItem:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.liveBetMenu {
+  counter-reset: listCounter;
+}
+
+.liveBetMenuItem::before {
+  content: '-';
+  margin-right: 8px;
+  color: #192a32;
+}
+
+.liveBetMenuItemDecimal::before {
+  counter-increment: listCounter;
+  content: counter(listCounter);
+  margin-right: 8px;
+  color: #2e9344;
+}
+
+.liveBetMenuItem:not(:last-child),
+.liveBetMenuItemDecimal:not(:last-child) {
+  margin-bottom: 24px;
+}

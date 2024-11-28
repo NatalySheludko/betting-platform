@@ -1,9 +1,56 @@
+import { useState } from 'react';
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+
+import { faqItems } from '../../utils';
+
 import css from '../Faq/Faq.module.css';
 
 export default function Faq() {
+  const [openId, setOpenId] = useState([0, 1]);
+
+  const openClickHandler = (id) => {
+    setOpenId((prevOpenIds) => {
+      if (prevOpenIds.includes(id)) {
+        return prevOpenIds.filter((openId) => openId !== id);
+      } else {
+        return [...prevOpenIds, id];
+      }
+    });
+  };
+
   return (
-    <div className={css.faq}>
-    
-    </div>
+    <section className={css.section}>
+      <div className={css.container}>
+        <h2 className={css.faqTitle}>faq</h2>
+        <ul className={css.faqMenu}>
+          {faqItems.map((item, id) => (
+            <li key={id} className={css.faqMenuItem}>
+              <button
+                className={css.faqMenuItemTitle}
+                onClick={() => openClickHandler(id)}
+              >
+                <div className={css.itemTitleWrap}>
+                  <span>{item.title}</span>
+                  {openId.includes(id) ? (
+                    <IoIosArrowUp className={css.itemArrowIcon} />
+                  ) : (
+                    <IoIosArrowDown className={css.itemArrowIcon} />
+                  )}
+                </div>
+              </button>
+              <div
+                className={`${css.itemTextCollapse} ${
+                  openId.includes(id) ? css.open : ''
+                }`}
+              >
+                <div>
+                  <p className={css.faqMenuItemText}>{item.content}</p>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
   );
 }

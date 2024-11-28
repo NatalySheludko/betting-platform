@@ -1,0 +1,73 @@
+.homePageContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1240px;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.contentContainer {
+  max-width: 925px;
+  z-index: 1;
+}
+
+.homeFirstRadialCircle {
+  position: absolute;
+  top: 9%;
+  left: 30%;
+  width: 1830px;
+  height: 2114px;
+  transform: translate(-50%, -20%);
+  background: radial-gradient(
+    33.56% 33.56% at 45.9% 46.39%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 185, 222, 1) 20.1%,
+    rgba(0, 133, 194, 1) 39.9%,
+    rgba(0, 104, 154, 0.39) 68%,
+    rgba(0, 83, 123, 0) 100%
+  );
+  border-radius: 50%;
+}
+
+.homeSecondRadialCircle {
+  position: absolute;
+  top: 45%;
+  left: 42.5%;
+  width: 1920px;
+  height: 2114px;
+  transform: translate(-50%, -30%);
+  background: radial-gradient(
+    35.04% 35.04% at 45.9% 46.39%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 185, 222, 1) 20.1%,
+    rgba(0, 133, 194, 1) 39.9%,
+    rgba(0, 104, 154, 0.39) 68%,
+    rgba(0, 83, 123, 0) 100%
+  );
+  border-radius: 50%;
+}
+
+.homeThirdRadialCircle {
+  position: absolute;
+  bottom: -3%;
+  left: 30%;
+  width: 1830px;
+  height: 1769px;
+  transform: translate(-50%, 0%);
+  background: radial-gradient(
+    41.79% 41.79% at 45.9% 46.39%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 185, 222, 1) 20.1%,
+    rgba(0, 133, 194, 1) 39.9%,
+    rgba(0, 104, 154, 0.39) 68%,
+    rgba(0, 83, 123, 0) 100%
+  );
+  border-radius: 50%;
+}
+
+.sidebarContainer {
+  max-width: 295px;
+  z-index: 1;
+}

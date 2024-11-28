@@ -1,0 +1,49 @@
+.section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.container {
+  padding: 32px 20px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.factsTitle {
+  width: 320px;
+  padding: 0px 0px 6px 0px;
+  margin-bottom: 24px;
+  white-space: nowrap;
+  border-bottom: 2px solid #c5c5c5;
+}
+
+.factsMenuItem {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  width: 850px;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.5);
+}
+
+.factsMenuItem:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.menuItemEmoji {
+  width: 24px;
+  height: 28px;
+  margin-right: 8px;
+}
+
+.menuItemTitle {
+  width: 167px;
+  margin-right: 32px;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.menuItemText {
+  width: 587px;
+}

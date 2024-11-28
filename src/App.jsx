@@ -1,6 +1,5 @@
 import { lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { Toaster } from 'react-hot-toast';
 
 import Layout from './components/Layout/Layout';
 
@@ -21,8 +20,6 @@ export default function App() {
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>
-
-        <Toaster />
       </div>
     </div>
   );

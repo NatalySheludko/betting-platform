@@ -6,8 +6,6 @@
 .container {
   position: relative;
   padding-top: 10px;
-  max-width: 925px;
-  margin: 0 auto;
   padding: 41px 20px 52px 20px;
   border-radius: 6px;
   background-color: rgba(20, 30, 85, 0.6);
@@ -25,10 +23,10 @@
   position: absolute;
   top: 0px;
   left: 50%;
-  transform: translateX(-50%);
-  width: 925px;
   height: 384px;
-  z-index: 1;
+  width: 925px;
+  border-radius: 6px;
+  transform: translateX(-50%);
 }
 
 .heroPlayerDecoration {
@@ -37,16 +35,16 @@
   right: 46px;
   width: 284px;
   height: 384px;
-  z-index: 1;
 }
 
-.heroContent {
-  position: relative; /* Stacks above decorative images */
-  z-index: 2; /* Ensure content is above the images */
+.heroContentWrap {
+  position: relative;
+  z-index: 777;
 }
 
 .heroRatingWrap {
   display: flex;
+  align-items: center;
   margin-bottom: 35px;
 }
 
@@ -55,7 +53,6 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 1.2;
-  text-transform: uppercase;
   color: #fff;
 }
 
@@ -74,11 +71,6 @@
 .heroTitle {
   width: 538px;
   margin-bottom: 16px;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.2;
-  text-transform: uppercase;
-  color: #fff;
 }
 
 .heroCustomBtn {

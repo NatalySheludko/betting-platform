@@ -1,0 +1,61 @@
+.section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.container {
+  max-width: 925px;
+  margin: 0 auto;
+  padding: 30px 20.5px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.faqTitle {
+  margin-bottom: 32px;
+}
+
+.faqMenuItem:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.faqMenuItemTitle {
+  padding: 20px;
+  width: 884px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  border: 1px solid rgba(119, 119, 119, 0.5);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.itemTitleWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemArrowIcon {
+  width: 24px;
+  height: 24px;
+  stroke: #192a32;
+}
+
+.itemTextCollapse {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+}
+
+.itemTextCollapse.open {
+  max-height: 1000px;
+}
+
+.faqMenuItemText {
+  padding: 16px 12px;
+  width: 884px;
+  border-radius: 0 0 6px 6px;
+  background-color: #dfe8f6;
+  opacity: 0.9;
+}
