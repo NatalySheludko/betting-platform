@@ -8,7 +8,7 @@
 /* ____________________________Tablet styles____________________________ */
 @media screen and (min-width: 768px) {
   .logo {
-    margin-right: 15px;
+    margin-right: 0px;
   }
 }
 

@@ -15,8 +15,7 @@
   }
 
   .mobileAppText {
-    width: 300px;
-		text-align: center;
+    width: 100%;
     margin-bottom: 10px;
   }
 
@@ -47,7 +46,7 @@
 /* ____________________________Tablet styles____________________________ */
 @media screen and (min-width: 768px) {
   .mobileAppText {
-    width: 600px;
+    width: 100%;
   }
 }
 
@@ -64,7 +63,7 @@
   }
 
   .mobileAppText {
-    width: 666px;
+    width: 100%;
   }
 
   .mobileAppLink {

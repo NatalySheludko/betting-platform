@@ -6,8 +6,7 @@
   }
 
   .container {
-    display: flex;
-    justify-content: center;
+		width: 100%;
     padding: 10px 10px;
     border-radius: 6px;
     background-color: var(--default-white);
@@ -19,7 +18,7 @@
     align-items: center;
     border-radius: 6px;
     padding: 10px 10px;
-    width: 300px;
+    width: 100%;
     background-color: var(--blue-lighter);
   }
 
@@ -74,7 +73,7 @@
 
   .ratingsMenuItem {
     padding: 14px 14px;
-    width: 700px;
+    width: 100%;
   }
 
   .ratingsMenuItem:not(:last-child) {
@@ -109,6 +108,6 @@
 
   .ratingsMenuItem {
     padding: 16px 24px;
-    width: 885px;
+    width: 100%;
   }
 }

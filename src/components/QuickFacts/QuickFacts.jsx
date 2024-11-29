@@ -10,10 +10,8 @@ export default function QuickFacts() {
         <ul className={css.factsMenu}>
           {factsItems.map((item, index) => (
             <li key={index} className={css.factsMenuItem}>
-              <div className={css.factsContentWrap}>
-                <span className={css.menuItemEmoji}>{item.emoji}</span>
-                <h3 className={css.menuItemTitle}>{item.title}</h3>
-              </div>
+              <span className={css.menuItemEmoji}>{item.emoji}</span>
+              <h3 className={css.menuItemTitle}>{item.title}</h3>
               <p className={css.menuItemText}>{item.description}</p>
             </li>
           ))}

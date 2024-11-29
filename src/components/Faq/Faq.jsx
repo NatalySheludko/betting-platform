@@ -18,24 +18,27 @@ export default function Faq({ contentWidth }) {
     });
   };
 
-  const getButtonWidth = () => {
-    if (contentWidth === '925px') {
-      return '884px';
-    } else if (contentWidth === '1240px') {
-      return '1199px';
-    }
-    return '884px';
-  };
+  // const getButtonWidth = () => {
+  //   if (contentWidth === '925px') {
+  //     return '884px';
+  //   } else if (contentWidth === '1240px') {
+  //     return '1199px';
+  //   }
+  //   return '884px';
+  // };
 
   return (
     <section className={css.section}>
-      <div className={css.container} style={{ maxWidth: contentWidth }}>
+      <div
+        className={`${css.container} ${
+          contentWidth === '925px' ? css.compact : css.wide
+        }`}
+      >
         <h2 className={css.faqTitle}>faq</h2>
         <ul className={css.faqMenu}>
           {faqItems.map((item, id) => (
             <li key={id} className={css.faqMenuItem}>
               <button
-                style={{ width: getButtonWidth() }}
                 className={css.itemBtn}
                 onClick={() => openClickHandler(id)}
               >

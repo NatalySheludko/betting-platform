@@ -30,8 +30,7 @@
   }
 
   .footerContext:first-of-type {
-    text-align: center;
-    width: 300px;
+    width: 100%;
   }
 
   .footerContext:last-of-type {
@@ -56,13 +55,13 @@
 
   .footerContextWrap {
     display: flex;
-		justify-content: space-between;
+    justify-content: space-between;
     margin-bottom: 10px;
   }
 
   .footerContext:first-of-type {
     text-align: start;
-    width: 750px;
+    width: 100%;
   }
 
   .footerMenu {
@@ -72,3 +71,9 @@
   }
 }
 
+/* ____________________________Desktop styles____________________________ */
+@media screen and (min-width: 768px) {
+  .footerContext:first-of-type {
+    width: 100%;
+  }
+}
