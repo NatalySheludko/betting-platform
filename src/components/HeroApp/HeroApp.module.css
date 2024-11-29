@@ -35,7 +35,7 @@
     position: absolute;
     bottom: 20%;
     right: 0%;
-    width: 630px;
+    width: 400px;
     height: 102px;
   }
 
@@ -112,7 +112,7 @@
   }
 
   .appCartsSymbDecoration {
-    height: 202px;
+    height: 202px; width: 650px;
   }
 
   .appBetsDecoration {
