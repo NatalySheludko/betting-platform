@@ -18,46 +18,55 @@ export const menuItems = [
     text: 'play review',
     icon: '/images/navigation/money.svg',
     alt: 'Play review',
+    href: '#review',
   },
   {
     text: 'casino bonuses',
     icon: '/images/navigation/crown.svg',
     alt: 'Casino bonuses',
+    href: '#bonuses',
   },
   {
-    text: 'casino bonuses',
+    text: 'casino games',
     icon: '/images/navigation/trophy.svg',
-    alt: 'Casino bonuses',
+    alt: 'Casino games',
+    href: '#games',
   },
   {
     text: 'casino app',
     icon: '/images/navigation/online-casino.svg',
     alt: 'Casino app',
+    href: '#mobile',
   },
   {
     text: 'casino mobile',
     icon: '/images/navigation/mobile.svg',
     alt: 'Casino mobile',
+    href: '#mobile',
   },
   {
     text: 'how to sign up',
     icon: '/images/navigation/casino.svg',
     alt: 'How to sign up',
+    href: '#sign-up',
   },
   {
     text: 'casino review',
     icon: '/images/navigation/croupier.svg',
     alt: 'Casino review',
+    href: '#rating',
   },
   {
     text: 'player reviews (4)',
     icon: '/images/navigation/credit-card.svg',
     alt: 'Player reviews',
+    href: '#reviews',
   },
   {
     text: 'complaints',
     icon: '/images/navigation/poker-table.svg',
     alt: 'Complaints',
+    href: '#complaints',
   },
 ];
 
@@ -312,5 +321,39 @@ export const faqItems = [
     title: 'question',
     content:
       "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. ",
+  },
+];
+
+//=============BonusesList component==============/
+export const bonusesList = [
+  {
+    id: 1,
+    imgSrc: '/images/bonuse/badminton.svg',
+    alt: 'Badminton equipment',
+  },
+  {
+    id: 2,
+    imgSrc: '/images/bonuse/basketball.svg',
+    alt: 'Basketball equipment',
+  },
+  {
+    id: 3,
+    imgSrc: '/images/bonuse/american-football.svg',
+    alt: 'American football equipment',
+  },
+  {
+    id: 4,
+    imgSrc: '/images/bonuse/american-ball.svg',
+    alt: 'American football equipment',
+  },
+  {
+    id: 5,
+    imgSrc: '/images/bonuse/baseball.svg',
+    alt: 'Baseball equipment',
+  },
+  {
+    id: 6,
+    imgSrc: '/images/bonuse/golf-glove.svg',
+    alt: 'American baseball equipment',
   },
 ];
