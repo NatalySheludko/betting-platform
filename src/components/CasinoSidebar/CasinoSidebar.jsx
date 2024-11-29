@@ -6,7 +6,7 @@ import css from './CasinoSidebar.module.css';
 
 export default function CasinoSidebar() {
   return (
-    <section className={css.section}>
+    <section id="games" className={css.section}>
       <div className={css.container}>
         <h2 className={css.casinoSidebarTitle}>Casino</h2>
 

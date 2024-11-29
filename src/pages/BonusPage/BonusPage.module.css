@@ -1,0 +1,68 @@
+.bonusPageContainer {
+  position: relative;
+	overflow: hidden;
+  z-index: 2;
+}
+
+.contentContainer {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1240px;
+  padding-top: 10px;
+  gap: 20px;
+  z-index: 2;
+}
+
+.bonusFirstRadialCircle {
+  position: absolute;
+  top: -1%;
+  left: 50%;
+  width: 1909px;
+  height: 1509px;
+  transform: translate(-50%, -20%);
+  background: radial-gradient(
+    49.99% 49.99% at 45.9% 46.39%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 185, 222, 1) 20.1%,
+    rgba(0, 133, 194, 1) 39.9%,
+    rgba(0, 104, 154, 0.39) 68%,
+    rgba(0, 83, 123, 0) 100%
+  );
+  border-radius: 50%;
+}
+
+.bonusSecondRadialCircle {
+  position: absolute;
+  top: 44%;
+  left: 45%;
+  width: 1920px;
+  height: 2114px;
+  transform: translate(-50%, -30%);
+  background: radial-gradient(
+    41.53% 41.53% at 45.9% 46.39%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 185, 222, 1) 20.1%,
+    rgba(0, 133, 194, 1) 39.9%,
+    rgba(0, 104, 154, 0.39) 68%,
+    rgba(0, 83, 123, 0) 100%
+  );
+  border-radius: 50%;
+}
+
+.bonusThirdRadialCircle {
+  position: absolute;
+  bottom: 5%;
+  left: 51%;
+  width: 1909px;
+  height: 2115px;
+  transform: translate(-50%, 0%);
+  background: radial-gradient(
+    42.16% 42.16% at 45.9% 46.39%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 185, 222, 1) 20.1%,
+    rgba(0, 133, 194, 1) 39.9%,
+    rgba(0, 104, 154, 0.39) 68%,
+    rgba(0, 83, 123, 0) 100%
+  );
+  border-radius: 50%;
+}

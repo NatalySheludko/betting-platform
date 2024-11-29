@@ -20,7 +20,7 @@ export default function CustomerSupport() {
   };
 
   return (
-    <section className={css.section}>
+    <section id="complaints" className={css.section}>
       <div className={css.container}>
         <img
           src="/images/waves-decoration/wave-smooth.svg"

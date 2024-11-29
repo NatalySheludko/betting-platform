@@ -7,7 +7,7 @@ export default function Hero() {
   const stars = Array(5).fill(null);
 
   return (
-    <section className={css.section}>
+    <section id="sign-up" className={css.section}>
       <div className={css.container}>
         <img
           src="/images/waves-decoration/wave-sharp.svg"

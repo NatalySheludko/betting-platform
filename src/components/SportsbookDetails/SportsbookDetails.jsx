@@ -4,7 +4,7 @@ import css from './SportsbookDetails.module.css';
 
 export default function SportbookDetails() {
   return (
-    <section className={css.section}>
+    <section id="review" className={css.section}>
       <div className={css.container}>
         <div className={css.sportsbookWrap}>
           <h2 className={css.sportsbookTitle}>sportsbook review</h2>

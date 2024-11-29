@@ -41,7 +41,7 @@ export default function Reviews() {
       : currentItems;
 
   return (
-    <section className={css.section}>
+    <section id="reviews" className={css.section}>
       <div className={css.container}>
         <div className={css.reviewsTitleWrap}>
           <h2 className={css.reviewsTitle}>what other players have to say</h2>

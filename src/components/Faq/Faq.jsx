@@ -5,7 +5,7 @@ import { faqItems } from '../../utils';
 
 import css from '../Faq/Faq.module.css';
 
-export default function Faq() {
+export default function Faq({ contentWidth }) {
   const [openId, setOpenId] = useState([0, 1]);
 
   const openClickHandler = (id) => {
@@ -18,19 +18,29 @@ export default function Faq() {
     });
   };
 
+  const getButtonWidth = () => {
+    if (contentWidth === '925px') {
+      return '884px';
+    } else if (contentWidth === '1240px') {
+      return '1199px';
+    }
+    return '884px';
+  };
+
   return (
     <section className={css.section}>
-      <div className={css.container}>
+      <div className={css.container} style={{ maxWidth: contentWidth }}>
         <h2 className={css.faqTitle}>faq</h2>
         <ul className={css.faqMenu}>
           {faqItems.map((item, id) => (
             <li key={id} className={css.faqMenuItem}>
               <button
-                className={css.faqMenuItemTitle}
+                style={{ width: getButtonWidth() }}
+                className={css.itemBtn}
                 onClick={() => openClickHandler(id)}
               >
                 <div className={css.itemTitleWrap}>
-                  <span>{item.title}</span>
+                  {item.title}
                   {openId.includes(id) ? (
                     <IoIosArrowUp className={css.itemArrowIcon} />
                   ) : (

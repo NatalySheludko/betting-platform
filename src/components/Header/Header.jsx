@@ -16,14 +16,14 @@ export default function Header() {
           <Logo size="small" />
           <ul className={css.navMenu}>
             <HeaderNavLink
-              to="/"
+              to="/bonus"
               icon={IoIosGift}
-              label="bonuses"
+              label="bonus"
               iconClass={css.iconGift}
               textClass={css.navMenuText}
             />
             <HeaderNavLink
-              to="/"
+              to="/app"
               icon={MdOutlinePhoneIphone}
               label="app"
               iconClass={css.iconIPhone}

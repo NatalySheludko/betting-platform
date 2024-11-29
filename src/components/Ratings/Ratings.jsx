@@ -6,7 +6,7 @@ import css from './Ratings.module.css';
 
 export default function Rating() {
   return (
-    <section className={css.section}>
+    <section id="rating" className={css.section}>
       <div className={css.container}>
         <ul className={css.ratingsMenu}>
           {ratings.map((rating, index) => (

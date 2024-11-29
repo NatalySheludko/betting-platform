@@ -4,7 +4,6 @@
 }
 
 .container {
-  max-width: 925px;
   margin: 0 auto;
   padding: 30px 20.5px;
   border-radius: 6px;
@@ -19,9 +18,8 @@
   margin-bottom: 16px;
 }
 
-.faqMenuItemTitle {
+.itemBtn {
   padding: 20px;
-  width: 884px;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
@@ -54,7 +52,6 @@
 
 .faqMenuItemText {
   padding: 16px 12px;
-  width: 884px;
   border-radius: 0 0 6px 6px;
   background-color: #dfe8f6;
   opacity: 0.9;

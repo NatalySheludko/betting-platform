@@ -5,7 +5,7 @@
 
 .container {
   position: relative;
-  padding-top: 10px;
+  margin-bottom: 20px;
   padding: 90px 20px;
   border-radius: 6px;
   background-color: #fff;
@@ -43,10 +43,10 @@
 }
 
 .bonusTitle {
-	width: 494px;
-	font-size: 40px;
+  width: 494px;
+  font-size: 40px;
   margin-bottom: 16px;
-	white-space: nowrap;
+  white-space: nowrap;
 }
 
 .bonusText {
@@ -57,4 +57,14 @@
 
 .bonusCustomBtn {
   border: 1px solid #fff;
+}
+
+.bonusDescriptionContainer {
+  padding: 32px 20px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.bonusDescriptionTitle {
+  margin-bottom: 16px;
 }

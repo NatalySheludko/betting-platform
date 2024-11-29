@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 import { menuItems } from '../../utils';
 
 import css from './Navigation.module.css';
@@ -9,16 +7,16 @@ export default function Navigation() {
     <section className={css.section}>
       <div className={css.container}>
         <ul className={css.navigationMenu}>
-          {menuItems.map(({ text, icon, alt }, index) => (
+          {menuItems.map(({ text, icon, alt, href }, index) => (
             <li key={index} className={css.navigationMenuItem}>
-              <Link className={css.navigationMenuLink}>
+              <a href={href} className={css.navigationMenuLink}>
                 <img
                   className={css.navigationMenuLinkIcon}
                   src={icon}
                   alt={alt}
                 />
                 <span className={css.navigationMenuLinkText}>{text}</span>
-              </Link>
+              </a>
             </li>
           ))}
         </ul>

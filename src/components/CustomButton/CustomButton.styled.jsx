@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const width = {
+  largest: '267px',
   larger: '251px',
   large: '214px',
   small: '127px',

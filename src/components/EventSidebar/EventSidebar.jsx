@@ -7,7 +7,7 @@ import css from './EventSidebar.module.css';
 
 export default function EventSidebar() {
   return (
-    <section className={css.section}>
+    <section id="games" className={css.section}>
       <div className={css.container}>
         <div className={css.sidebarEventsWrap}>
           <CustomButton

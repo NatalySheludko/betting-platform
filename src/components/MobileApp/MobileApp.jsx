@@ -6,7 +6,7 @@ import css from './MobileApp.module.css';
 
 export default function MobileApp() {
   return (
-    <section className={css.section}>
+    <section id="mobile" className={css.section}>
       <div className={css.container}>
         <p className={css.mobileAppText}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat

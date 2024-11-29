@@ -4,7 +4,6 @@ import EventSidebar from '../../components/EventSidebar/EventSidebar';
 import CasinoSidebar from '../../components/CasinoSidebar/CasinoSidebar';
 import Navigation from '../../components/Navigation/Navigation';
 import BonusOffer from '../../components/BonusOffer/BonusOffer';
-import BonusDescription from '../../components/BonusDescription/BonusDescription';
 import Rating from '../../components/Ratings/Ratings';
 import QuickFacts from '../../components/QuickFacts/QuickFacts';
 import SportsbookDetails from '../../components/SportsbookDetails/SportsbookDetails';
@@ -20,21 +19,22 @@ export default function HomePage() {
     <div className={css.homePageContainer}>
       <div className={css.homeFirstRadialCircle}></div>
       <div className={css.homeSecondRadialCircle}></div>
-      <div className={css.homeThirdRadialCircle}></div>
+			<div className={css.homeThirdRadialCircle}></div>
+			
       <div className={css.contentContainer}>
         <MobileApp />
         <Hero />
         <Navigation />
         <BonusOffer />
-        <BonusDescription />
         <Rating />
         <QuickFacts />
         <SportsbookDetails />
         <Reviews />
         <CustomSupport />
-        <Faq />
+        <Faq contentWidth="925px" />
         <Footer />
-      </div>
+			</div>
+			
       <div className={css.sidebarContainer}>
         <EventSidebar />
         <CasinoSidebar />

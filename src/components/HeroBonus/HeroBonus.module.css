@@ -5,7 +5,7 @@
 
 .container {
   position: relative;
-  padding: 41px 20px 52px 20px;
+  padding: 45px 26px 47px 26px;
   border-radius: 6px;
   background-color: rgba(20, 30, 85, 0.6);
   background-image: linear-gradient(
@@ -21,20 +21,53 @@
 
 .heroWaveDecoration {
   position: absolute;
-  top: 0px;
+  top: -3.5%;
   left: 50%;
-  height: 384px;
-  width: 925px;
+  height: 385px;
+  width: 1241px;
   border-radius: 6px;
   transform: translateX(-50%);
 }
 
-.heroPlayerDecoration {
+.heroSlotDecoration {
   position: absolute;
   bottom: 0px;
-  right: 46px;
-  width: 284px;
-  height: 384px;
+  right: 97px;
+  width: 433px;
+  height: 373px;
+}
+
+.heroMenu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.heroMenuItem {
+  position: relative;
+}
+
+.heroMenuItem:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  width: 1.1px;
+  height: 15px;
+  background-color: white;
+  transform: translateY(-50%);
+}
+
+.heroLink {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.84;
+}
+
+.active {
+  color: white;
+  opacity: 1;
 }
 
 .heroContentWrap {
@@ -42,35 +75,10 @@
   z-index: 777;
 }
 
-.heroRatingWrap {
-  display: flex;
-  align-items: center;
-  margin-bottom: 35px;
-}
-
-.heroScore {
-  margin-right: 8px;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.2;
-  color: #fff;
-}
-
-.heroRating {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.heroRatingIcon {
-  width: 24px;
-  height: 24px;
-  fill: #ffc512;
-}
-
 .heroTitle {
-  width: 538px;
+  width: 629px;
   margin-bottom: 16px;
+  font-size: 48px;
 }
 
 .heroCustomBtn {
