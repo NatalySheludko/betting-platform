@@ -1,38 +1,101 @@
-.container {
-  background-color: var(--blue-extra-dark);
+/* ____________________________Mobile styles____________________________ */
+@media screen and (min-width: 320px) {
+  .container {
+    background-color: var(--dark);
+  }
+
+  .navContainer {
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 10px 10px;
+  }
+
+	.pageNav {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+  .navMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .iconGift,
+  .iconIPhone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+  }
+
+  .navOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
 }
 
-.navContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 16px 0;
+/* ____________________________Tablet styles____________________________ */
+@media screen and (min-width: 768px) {
+  .navContainer {
+    display: flex;
+    padding: 16px 16px;
+    flex-direction: column;
+    min-width: 768px;
+    gap: 16px;
+  }
+
+  .navMenu {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .iconGift,
+  .iconIPhone {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+  }
+
+  .navOptions {
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+  }
 }
 
+/* ____________________________Desktop styles____________________________ */
+@media screen and (min-width: 1240px) {
+  .navContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    padding: 16px 0;
+  }
+}
 .pageNav {
-  display: flex;
+  flex-direction: row;
 }
 
 .navMenu {
-  display: flex;
   align-items: center;
   gap: 21px;
 }
 
 .iconGift,
 .iconIPhone {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 24px;
   height: 24px;
   margin-right: 10px;
 }
 
 .navOptions {
-  display: flex;
   align-items: center;
-  gap: 16px;
 }

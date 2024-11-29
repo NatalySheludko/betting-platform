@@ -1,43 +1,68 @@
-.section {
-  padding-bottom: 10px;
-  padding-top: 10px;
+/* ____________________________Mobile styles____________________________ */
+@media screen and (min-width: 320px) {
+  .section {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .menuItemWrap {
+    margin-bottom: 10px;
+    padding: 12px 13px;
+    border-radius: 24px;
+    background-color: var(--default-white);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .sportEquipmentWrap {
+    position: relative;
+    border-radius: 160px;
+    width: 277px;
+    height: 277px;
+    background-color: var(--grey-blue);
+  }
+
+  .sportEquipmentImg {
+    position: absolute;
+    top: 49%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bonusesTitle {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  .bonusesText {
+    margin-bottom: 24px;
+    width: 686px;
+  }
 }
 
-.menuItemWrap {
-  margin-bottom: 20px;
-  padding: 32px 53px;
-  border-radius: 24px;
-  background-color: #fff;
+/* ____________________________Tablet styles____________________________ */
+@media screen and (min-width: 768px) {
+  .menuItemWrap {
+    padding: 32px 53px;
+  }
+
+  .container {
+    display: flex;
+    gap: 95px;
+  }
 }
 
-.container {
-  display: flex;
-  gap: 95px;
-}
-
-.sportEquipmentWrap {
-  position: relative;
-  border-radius: 160px;
-  width: 277px;
-  height: 277px;
-  background-color: #e2eaf7;
-}
-
-.sportEquipmentImg {
-  position: absolute;
-  top: 49%;
-  left: 51%;
-  transform: translate(-50%, -50%);
-}
-
-.bonusesTitle {
-  margin-bottom: 16px;
-  font-weight: 700;
-  font-size: 32px;
-  text-transform: uppercase;
-}
-
-.bonusesText {
-  margin-bottom: 24px;
-  width: 686px;
+/* ____________________________Desktop styles____________________________ */
+@media screen and (min-width: 1240px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 95px;
+  }
 }

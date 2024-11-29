@@ -1,3 +1,20 @@
-.logo {
-	margin-right: 28px;
+/* ____________________________Mobile styles____________________________ */
+@media screen and (min-width: 320px) {
+  .logo {
+    margin-right: 0px;
+  }
+}
+
+/* ____________________________Tablet styles____________________________ */
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 15px;
+  }
+}
+
+/* ____________________________Desktop styles____________________________ */
+@media screen and (min-width: 1240px) {
+  .logo {
+    margin-right: 28px;
+  }
 }

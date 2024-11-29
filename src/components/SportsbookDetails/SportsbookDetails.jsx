@@ -35,7 +35,7 @@ export default function SportbookDetails() {
         </div>
         <div className={css.lineupWrap}>
           <h2 className={css.sportsbookTitle}>lineup of the sports</h2>
-          <p>
+          <p className={css.paragraph}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
             egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper
             volutpat cras elementum. Eget ultrices donec urna tellus duis
@@ -47,7 +47,7 @@ export default function SportbookDetails() {
         </div>
         <div className={css.betTypesWrap}>
           <h2 className={css.sportsbookTitle}>betting types</h2>
-          <p>
+          <p className={css.paragraph}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
             egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper
             volutpat cras elementum. Eget ultrices donec urna tellus duis
@@ -61,31 +61,39 @@ export default function SportbookDetails() {
           <h2 className={css.sportsbookTitle}>live betting</h2>
           <ul className={css.liveBetMenu}>
             <li className={css.liveBetMenuItem}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
-              egestas eget purus, in dapibus imperdiet quis eget.
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Consequat egestas eget purus, in dapibus imperdiet quis eget.
+              </p>
             </li>
             <li className={css.liveBetMenuItem}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </li>
             <li className={css.liveBetMenuItem}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
-              egestas eget purus.
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Consequat egestas eget purus.
+              </p>
             </li>
           </ul>
           <ol className={css.liveBetMenu}>
             <li className={css.liveBetMenuItemDecimal}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
-              egestas eget purus, in dapibus imperdiet quis eget.
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Consequat egestas eget purus, in dapibus imperdiet quis eget.
+              </p>
             </li>
             <li className={css.liveBetMenuItemDecimal}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </li>
             <li className={css.liveBetMenuItemDecimal}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
-              egestas eget purus.
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Consequat egestas eget purus.
+              </p>
             </li>
           </ol>
-          <p>
+          <p className={css.paragraph}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
             egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper
             volutpat cras elementum. Eget ultrices donec urna tellus duis

@@ -4,7 +4,7 @@ export const customStyles = {
   control: (base) => ({
     ...base,
     height: '46px',
-    width: '131px',
+    width: '130px',
     borderRadius: '16px',
     border: 'none',
     fontWeight: '600',

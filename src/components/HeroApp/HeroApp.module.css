@@ -1,103 +1,129 @@
-.section {
-  padding-top: 10px;
-  padding-bottom: 10px;
+/* ____________________________Mobile styles____________________________ */
+@media screen and (min-width: 320px) {
+  .section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .container {
+    position: relative;
+    padding: 15px 16px 17px 16px;
+    border-radius: 6px;
+    background-color: var(--background-dark);
+    background-image: linear-gradient(
+        var(--background-dark),
+        var(--background-dark)
+      ),
+      url(/images/hero/stadium-1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  .appWaveDecoration {
+    position: absolute;
+    top: -3.5%;
+    left: 50%;
+    height: 385px;
+    width: 320;
+    border-radius: 6px;
+    transform: translateX(-50%);
+  }
+
+  .appCartsSymbDecoration {
+    position: absolute;
+    bottom: 20%;
+    right: 0%;
+    width: 630px;
+    height: 102px;
+  }
+
+  .appBetsDecoration {
+    position: absolute;
+    bottom: -2%;
+    right: 0%;
+    width: 115px;
+    height: 151px;
+  }
+
+  .appHeroMenu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .appHeroMenuItem {
+    position: relative;
+  }
+
+  .appHeroMenuItem:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    width: 1.1px;
+    height: 15px;
+    background-color: var(--default-white);
+    transform: translateY(-50%);
+  }
+
+  .appHeroLink {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--default-white);
+    opacity: 0.84;
+  }
+
+  .active {
+    color: var(--default-white);
+    opacity: 1;
+  }
+
+  .appHeroContentWrap {
+    position: relative;
+    z-index: 777;
+  }
+
+  .appHeroTitle {
+    width: 300px;
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+
+  .appHeroCustomBtn {
+    margin-bottom: 10px;
+    border: 1px solid var(--default-white);
+  }
+
+  .appHeroLegalDisclaimer {
+    padding-left: 57px;
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 1.5;
+    color: var(--default-white);
+  }
 }
 
-.container {
-  position: relative;
-  padding: 45px 26px 47px 26px;
-  border-radius: 6px;
-  background-color: rgba(20, 30, 85, 0.6);
-  background-image: linear-gradient(
-      rgba(20, 30, 85, 0.6),
-      rgba(20, 30, 85, 0.6)
-    ),
-    url(/images/hero/stadium-1x.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
+/* ____________________________Tablet styles____________________________ */
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 45px 26px 47px 26px;
+  }
 
-.appWaveDecoration {
-  position: absolute;
-  top: -3.5%;
-  left: 50%;
-  height: 385px;
-  width: 1241px;
-  border-radius: 6px;
-  transform: translateX(-50%);
-}
+  .appCartsSymbDecoration {
+    height: 202px;
+  }
 
-.appCartsSymbDecoration {
-  position: absolute;
-  bottom: 20%;
-  right: 0;
-  width: 630px;
-  height: 202px;
-}
+  .appBetsDecoration {
+    bottom: 2%;
+    right: 12%;
+    width: 255px;
+    height: 351px;
+  }
 
-.appBetsDecoration {
-  position: absolute;
-  bottom: 2%;
-  right: 12%;
-  width: 255px;
-	height: 351px;
-}
-
-.appHeroMenu {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.appHeroMenuItem {
-  position: relative;
-}
-
-.appHeroMenuItem:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: -10px;
-  width: 1.1px;
-  height: 15px;
-  background-color: white;
-  transform: translateY(-50%);
-}
-
-.appHeroLink {
-  font-weight: 400;
-  font-size: 16px;
-  color: #fff;
-  opacity: 0.84;
-}
-
-.active {
-  color: white;
-  opacity: 1;
-}
-
-.appHeroContentWrap {
-  position: relative;
-  z-index: 777;
-}
-
-.appHeroTitle {
-  width: 629px;
-  margin-bottom: 16px;
-  font-size: 48px;
-}
-
-.appHeroCustomBtn {
-  margin-bottom: 10px;
-  border: 1px solid #fff;
-}
-
-.appHeroLegalDisclaimer {
-  padding-left: 57px;
-  font-weight: 400;
-  font-size: 6px;
-  line-height: 1.5;
-  color: #fff;
+  .appHeroTitle {
+    width: 629px;
+    font-size: 48px;
+  }
 }

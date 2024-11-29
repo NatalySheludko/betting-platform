@@ -1,49 +1,120 @@
-.section {
-  padding-top: 10px;
-  padding-bottom: 10px;
+/* ____________________________Mobile styles____________________________ */
+@media screen and (min-width: 320px) {
+  .section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 12px;
+    border-radius: 6px;
+    background-color: var(--default-white);
+  }
+
+  .factsTitle {
+    width: 170px;
+    padding: 0px 0px 4px 0px;
+    margin-bottom: 14px;
+    white-space: nowrap;
+    border-bottom: 2px solid var(--light-gray);
+  }
+
+  .factsMenuItem {
+    display: flex;
+    align-items: center;
+    padding: 4px 4px;
+    width: 320px;
+    border-bottom: 1px solid var(--grey-darkest);
+  }
+
+  .factsMenuItem:not(:last-child) {
+    margin-bottom: 4px;
+  }
+
+	.factsContentWrap{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+  .menuItemEmoji {
+    width: 20px;
+    height: 24px;
+    margin-right: 4px;
+  }
+
+  .menuItemTitle {
+    margin-right: 8px;
+    white-space: wrap;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .menuItemText {
+   text-align: left;
+  }
 }
 
-.container {
-  padding: 32px 20px;
-  border-radius: 6px;
-  background-color: #fff;
+/* ____________________________Tablet styles____________________________ */
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 20px 20px;
+    display: block;
+    flex-direction: unset;
+    align-items: unset;
+  }
+
+  .factsTitle {
+    width: 250px;
+    padding: 0px 0px 6px 0px;
+    margin-bottom: 24px;
+  }
+
+  .factsMenuItem {
+    padding: 8px 16px;
+    width: 730px;
+  }
+
+  .factsMenuItem:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  .menuItemEmoji {
+    width: 24px;
+    height: 28px;
+    margin-right: 8px;
+  }
+
+  .menuItemTitle {
+    width: 167px;
+    margin-right: 32px;
+    white-space: nowrap;
+  }
+
+  .menuItemText {
+    width: 470px;
+  }
 }
 
-.factsTitle {
-  width: 320px;
-  padding: 0px 0px 6px 0px;
-  margin-bottom: 24px;
-  white-space: nowrap;
-  border-bottom: 2px solid #c5c5c5;
-}
+/* ____________________________Desktop styles____________________________ */
+@media screen and (min-width: 1240px) {
+  .container {
+    padding: 32px 20px;
+  }
 
-.factsMenuItem {
-  display: flex;
-  align-items: center;
-  padding: 8px 16px;
-  width: 850px;
-  border-bottom: 1px solid rgba(119, 119, 119, 0.5);
-}
+  .factsTitle {
+    width: 320px;
+  }
 
-.factsMenuItem:not(:last-child) {
-  margin-bottom: 8px;
-}
+  .factsMenuItem {
+    width: 850px;
+  }
 
-.menuItemEmoji {
-  width: 24px;
-  height: 28px;
-  margin-right: 8px;
-}
-
-.menuItemTitle {
-  width: 167px;
-  margin-right: 32px;
-  white-space: nowrap;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.menuItemText {
-  width: 587px;
+  .menuItemText {
+    width: 587px;
+  }
 }

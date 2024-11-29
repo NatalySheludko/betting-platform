@@ -1,33 +1,49 @@
-.section {
-  padding-top: 10px;
-  padding-bottom: 10px;
+/* ____________________________Mobile styles____________________________ */
+@media screen and (min-width: 320px) {
+  .section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .container {
+    position: relative;
+    padding: 10px 10px;
+    border-radius: 6px;
+    background-color: var(--default-white);
+    overflow: hidden;
+  }
+
+  .storeWaveDecoration {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    height: 172px;
+    width: 1241px;
+    border-radius: 6px;
+    transform: translateX(-50%);
+  }
+
+  .storeContentWrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .menuBadgeItem:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
-.container {
-  position: relative;
-  padding: 20px 40px;
-  border-radius: 6px;
-  background-color: #fff;
-  overflow: hidden;
-}
+/* ____________________________Tablet styles____________________________ */
+@media screen and (min-width: 768px) {
+  .storeWaveDecoration {
+    top: 0%;
+  }
 
-.storeWaveDecoration {
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  height: 172px;
-  width: 1241px;
-  border-radius: 6px;
-  transform: translateX(-50%);
-}
-
-.storeContentWrap {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menuBadgeItem:not(:last-child) {
-  margin-bottom: 10px;
+  .storeContentWrap {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

@@ -1,62 +1,114 @@
-.section {
-  padding-top: 10px;
-  padding-bottom: 10px;
+/* ____________________________Mobile styles____________________________ */
+@media screen and (min-width: 320px) {
+  .section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    border-radius: 6px;
+    background-color: var(--default-white);
+  }
+
+  .ratingsMenuItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    padding: 10px 10px;
+    width: 300px;
+    background-color: var(--blue-lighter);
+  }
+
+  .ratingsMenuItem:not(:last-child) {
+    margin-bottom: 6px;
+  }
+
+  .menuItemTitle {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: var(--default-white);
+  }
+
+  .itemRatingWrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .itemStarsWrap {
+    display: flex;
+    margin-right: 4px;
+    gap: 4px;
+  }
+
+  .ratingIconStarActive {
+    width: 14px;
+    height: 14px;
+    fill: var(--yellow);
+  }
+
+  .ratingIconStar {
+    width: 14px;
+    height: 14px;
+    fill: var(--green-gray-light);
+  }
+
+  .menuItemScore {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--default-white);
+  }
 }
 
-.container {
-  padding: 32px 20px;
-  border-radius: 6px;
-  background-color: #fff;
+/* ____________________________Tablet styles____________________________ */
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 20px 20px;
+  }
+
+  .ratingsMenuItem {
+    padding: 14px 14px;
+    width: 700px;
+  }
+
+  .ratingsMenuItem:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .menuItemTitle {
+    font-size: 16px;
+  }
+
+  .itemStarsWrap {
+    margin-right: 16px;
+    gap: 8px;
+  }
+
+  .ratingIconStarActive {
+    width: 32px;
+    height: 32px;
+  }
+
+  .ratingIconStar {
+    width: 32px;
+    height: 32px;
+  }
 }
 
-.ratingsMenuItem {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 6px;
-  padding: 16px 24px;
-  width: 885px;
-  background-color: #80bef8;
-}
+/* ____________________________Desktop styles____________________________ */
+@media screen and (min-width: 1240px) {
+  .container {
+    padding: 32px 20px;
+  }
 
-.ratingsMenuItem:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.menuItemTitle {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.itemRatingWrap {
-  display: flex;
-  align-items: center;
-}
-
-.itemStarsWrap {
-  display: flex;
-  margin-right: 16px;
-  gap: 8px;
-}
-
-.ratingIconStarActive {
-  width: 32px;
-  height: 32px;
-  fill: #ffc512;
-}
-
-.ratingIconStar {
-  width: 32px;
-  height: 32px;
-  fill: #c3d5cf;
-}
-
-.menuItemScore {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #fff;
+  .ratingsMenuItem {
+    padding: 16px 24px;
+    width: 885px;
+  }
 }

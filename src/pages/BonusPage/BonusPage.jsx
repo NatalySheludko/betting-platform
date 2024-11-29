@@ -12,8 +12,8 @@ export default function BonusPage() {
     <div className={css.bonusPageContainer}>
       <div className={css.bonusFirstRadialCircle}></div>
       <div className={css.bonusSecondRadialCircle}></div>
-			<div className={css.bonusThirdRadialCircle}></div>
-			
+      <div className={css.bonusThirdRadialCircle}></div>
+
       <div className={css.contentContainer}>
         <HeroBonus />
         <WelcomeBonuses />

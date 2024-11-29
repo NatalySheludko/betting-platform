@@ -14,7 +14,7 @@ export default function LangDropdown() {
       value: 'at',
       label: 'AT',
       flagUrl: '/images/flag-1x.png',
-      flagX: '/images/flag@-x.png',
+      flagX: '/images/flag-2x.png',
     },
     {
       value: 'at',

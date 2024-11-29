@@ -1,40 +1,74 @@
-.footerSection {
-  padding-top: 10px;
+/* ____________________________Mobile styles____________________________ */
+@media screen and (min-width: 320px) {
+  .footerSection {
+    padding-top: 10px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 10px;
+    border-radius: 6px;
+    background-color: var(--default-white);
+  }
+
+  .footerContextWrap {
+    margin-bottom: 10px;
+  }
+
+  .footerResponsiblySymbol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 85px;
+    font-size: 25px;
+    font-weight: 700;
+    border: 1px solid var(--dark);
+    border-radius: 50%;
+  }
+
+  .footerContext:first-of-type {
+    text-align: center;
+    width: 300px;
+  }
+
+  .footerContext:last-of-type {
+    margin-bottom: 16px;
+  }
+
+  .footerMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
-.container {
-  padding: 35px 20px;
-  border-radius: 6px;
-  background-color: #fff;
+/* ____________________________Tablet styles____________________________ */
+@media screen and (min-width: 768px) {
+  .container {
+    justify-content: space-between;
+    align-items: unset;
+    padding: 30px 20px;
+  }
+
+  .footerContextWrap {
+    display: flex;
+		justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .footerContext:first-of-type {
+    text-align: start;
+    width: 750px;
+  }
+
+  .footerMenu {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
-.footerContextWrap {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 16px;
-}
-
-.footerResponsiblySymbol {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 85px;
-  height: 85px;
-  font-size: 25px;
-  font-weight: 700;
-  border: 1px solid #192a32;
-  border-radius: 50%;
-}
-
-.footerContext:first-of-type {
-  width: 782px;
-}
-
-.footerContext:last-of-type {
-  margin-bottom: 26px;
-}
-
-.footerMenu{
-	display: flex;
-	justify-content: space-between;
-}

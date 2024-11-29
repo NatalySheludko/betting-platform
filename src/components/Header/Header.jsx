@@ -14,6 +14,7 @@ export default function Header() {
       <div className={css.navContainer}>
         <nav className={css.pageNav}>
           <Logo size="small" />
+
           <ul className={css.navMenu}>
             <HeaderNavLink
               to="/bonus"

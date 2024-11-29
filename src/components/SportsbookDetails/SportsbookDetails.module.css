@@ -1,49 +1,160 @@
-.section {
-  padding-top: 10px;
-  padding-bottom: 10px;
+/* ____________________________Mobile styles____________________________ */
+@media screen and (min-width: 320px) {
+  .section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .container {
+    border-radius: 6px;
+    background-color: var(--default-white);
+  }
+
+  .sportsbookWrap,
+  .lineupWrap,
+  .betTypesWrap,
+  .liveBetWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 10px;
+  }
+
+  .sportsbookTitle {
+    margin-bottom: 24px;
+  }
+
+  .sportsbookMenuItem,
+  .paragraph {
+    max-height: 100px;
+    overflow-y: auto;
+    padding-right: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--light-gray) var(--lightest-gray);
+    border: 1px solid var(--light-gray);
+  }
+
+  .sportsbookMenuItem::-webkit-scrollbar,
+  .paragraph::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .sportsbookMenuItem::-webkit-scrollbar-track,
+  .paragraph::-webkit-scrollbar-track {
+    background-color: var(--lightest-gray);
+  }
+
+  .sportsbookMenuItem::-webkit-scrollbar-thumb,
+  .paragraph::-webkit-scrollbar-thumb {
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    border: 2px solid var(--lightest-gray);
+  }
+
+  .sportsbookMenuItem:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  .liveBetMenu {
+    counter-reset: listCounter;
+  }
+
+  .liveBetMenuItem::before {
+    content: '-';
+		font-size: 12px;
+    margin-right: 4px;
+    color: var(--dark);
+  }
+
+  .liveBetMenuItem,
+  .liveBetMenuItemDecimal {
+    display: flex;
+  }
+
+  .liveBetMenuItemDecimal::before {
+    counter-increment: listCounter;
+    content: counter(listCounter);
+		font-size: 12px;
+    margin-right: 4px;
+    color: #2e9344;
+  }
+
+  .liveBetMenuItem:not(:last-child),
+  .liveBetMenuItemDecimal:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
-.container {
-  border-radius: 6px;
-  background-color: #fff;
+/* ____________________________Tablet styles____________________________ */
+@media screen and (min-width: 768px) {
+  .sportsbookWrap,
+  .lineupWrap,
+  .betTypesWrap,
+  .liveBetWrap {
+    padding: 32px 20px;
+  }
+
+	.liveBetMenuItem::before {
+		font-size: 14px;
+  }
+
+  .liveBetMenuItemDecimal::before {
+		font-size: 14px;
+  }
+
+  .sportsbookMenuItem:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .liveBetMenuItem:not(:last-child),
+  .liveBetMenuItemDecimal:not(:last-child) {
+    margin-bottom: 24px;
+  }
 }
 
-.sportsbookWrap,
-.lineupWrap,
-.betTypesWrap,
-.liveBetWrap {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 32px 20px;
-}
+/* ____________________________Desktop styles____________________________ */
+@media screen and (min-width: 1240px) {
+  .sportsbookWrap,
+  .lineupWrap,
+  .betTypesWrap,
+  .liveBetWrap {
+    gap: 20px;
+    padding: 32px 20px;
+  }
 
-.sportsbookTitle {
-  margin-bottom: 24px;
-}
+	.liveBetMenuItem::before {
+		font-size: 16px;
+  }
 
-.sportsbookMenuItem:not(:last-child) {
-  margin-bottom: 24px;
-}
+  .liveBetMenuItemDecimal::before {
+		font-size: 15px;
+  }
 
-.liveBetMenu {
-  counter-reset: listCounter;
-}
+  .sportsbookMenuItem,
+  .paragraph {
+    max-height: unset;
+    overflow-y: unset;
+    padding-right: unset;
+    scrollbar-width: unset;
+    border-radius: unset;
+    scrollbar-color: unset;
+    border: unset;
+  }
 
-.liveBetMenuItem::before {
-  content: '-';
-  margin-right: 8px;
-  color: #192a32;
-}
+  .sportsbookMenuItem::-webkit-scrollbar,
+  .paragraph::-webkit-scrollbar {
+    width: unset;
+  }
 
-.liveBetMenuItemDecimal::before {
-  counter-increment: listCounter;
-  content: counter(listCounter);
-  margin-right: 8px;
-  color: #2e9344;
-}
+  .sportsbookMenuItem::-webkit-scrollbar-track,
+  .paragraph::-webkit-scrollbar-track {
+    background-color: unset;
+  }
 
-.liveBetMenuItem:not(:last-child),
-.liveBetMenuItemDecimal:not(:last-child) {
-  margin-bottom: 24px;
+  .sportsbookMenuItem::-webkit-scrollbar-thumb,
+  .paragraph::-webkit-scrollbar-thumb {
+    background-color: unset;
+    border-radius: unset;
+    border: unset;
+  }
 }

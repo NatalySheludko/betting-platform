@@ -1,41 +1,73 @@
-.section {
-  padding-bottom: 10px;
+/* ____________________________Mobile styles____________________________ */
+@media screen and (min-width: 320px) {
+  .section {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 20px;
+    border-radius: 6px;
+    background-color: var(--default-white);
+  }
+
+  .mobileAppText {
+    width: 300px;
+		text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .mobileAppLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 12px;
+    width: 300px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    border-radius: 16px;
+    color: var(--default-white);
+    background-color: var(--blue-dark);
+  }
+
+  .iconApple,
+  .iconAndroid {
+    width: 24px;
+    height: 24px;
+    fill: var(--default-white);
+  }
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  padding: 25px 20px;
-  border-radius: 6px;
-  background-color: #fff;
+/* ____________________________Tablet styles____________________________ */
+@media screen and (min-width: 768px) {
+  .mobileAppText {
+    width: 600px;
+  }
 }
 
-.mobileAppText {
-  width: 666px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
+/* ____________________________Desktop styles____________________________ */
+@media screen and (min-width: 1240px) {
+  .section {
+    padding-top: unset;
+  }
 
-.mobileAppLink {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 7px;
-  padding: 12px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.2;
-  text-transform: uppercase;
-  border-radius: 16px;
-  color: #fff;
-  background-color: #1a3769;
-}
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
 
-.iconApple,
-.iconAndroid {
-  width: 24px;
-  height: 24px;
-  fill: white;
+  .mobileAppText {
+    width: 666px;
+  }
+
+  .mobileAppLink {
+    width: unset;
+  }
 }

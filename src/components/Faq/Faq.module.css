@@ -1,58 +1,63 @@
-.section {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
+/* ____________________________Mobile styles____________________________ */
+@media screen and (min-width: 320px) {
+  .section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
-.container {
-  margin: 0 auto;
-  padding: 30px 20.5px;
-  border-radius: 6px;
-  background-color: #fff;
-}
+  .container {
+    margin: 0 auto;
+    padding: 30px 20.5px;
+    border-radius: 6px;
+    background-color: var(--default-white);
+    overflow: hidden;
+  }
 
-.faqTitle {
-  margin-bottom: 32px;
-}
+  .faqTitle {
+    margin-bottom: 32px;
+  }
 
-.faqMenuItem:not(:last-child) {
-  margin-bottom: 16px;
-}
+  .faqMenuItem:not(:last-child) {
+    margin-bottom: 16px;
+  }
 
-.itemBtn {
-  padding: 20px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  text-transform: uppercase;
-  border: 1px solid rgba(119, 119, 119, 0.5);
-  background-color: transparent;
-  cursor: pointer;
-}
+  .itemBtn {
+    padding: 20px;
+    font-weight: 600;
+    width: 300px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    border: 1px solid var(--grey-darkest);
+    background-color: transparent;
+    cursor: pointer;
+  }
 
-.itemTitleWrap {
-  display: flex;
-  justify-content: space-between;
-}
+  .itemTitleWrap {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.itemArrowIcon {
-  width: 24px;
-  height: 24px;
-  stroke: #192a32;
-}
+  .itemArrowIcon {
+    width: 24px;
+    height: 24px;
+    stroke: var(--dark);
+  }
 
-.itemTextCollapse {
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.3s ease-out;
-}
+  .itemTextCollapse {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+  }
 
-.itemTextCollapse.open {
-  max-height: 1000px;
-}
+  .itemTextCollapse.open {
+    max-height: 1000px;
+  }
 
-.faqMenuItemText {
-  padding: 16px 12px;
-  border-radius: 0 0 6px 6px;
-  background-color: #dfe8f6;
-  opacity: 0.9;
+  .faqMenuItemText {
+    padding: 16px 12px;
+    border-radius: 0 0 6px 6px;
+    background-color: var(--blue-light);
+    opacity: 0.9;
+  }
 }

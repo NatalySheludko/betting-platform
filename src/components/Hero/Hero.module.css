@@ -1,87 +1,161 @@
-.section {
-  padding-top: 10px;
-  padding-bottom: 10px;
+/* ____________________________Mobile styles____________________________ */
+@media screen and (min-width: 320px) {
+  .section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .container {
+    position: relative;
+    padding: 10px 10px;
+    border-radius: 6px;
+    background-color: var(--background-dark);
+    background-image: linear-gradient(
+        var(--background-dark),
+        var(--background-dark)
+      ),
+      url(/images/hero/stadium-1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  .heroWaveDecoration {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    height: 384px;
+    width: 925px;
+    border-radius: 6px;
+    transform: translateX(-50%);
+  }
+
+  .heroPlayerDecoration {
+    position: absolute;
+    bottom: 0px;
+    right: 7px;
+    width: 170px;
+    height: 244px;
+  }
+
+  .heroContentWrap {
+    position: relative;
+    z-index: 777;
+  }
+
+  .heroRatingWrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .heroScore {
+    margin-right: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--default-white);
+  }
+
+  .heroRating {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .heroRatingIcon {
+    width: 14px;
+    height: 14px;
+    fill: var(--yellow);
+  }
+
+  .heroTitle {
+    width: 300px;
+    margin-bottom: 16px;
+  }
+
+  .heroCustomBtn {
+    margin-bottom: 10px;
+    border: 1px solid var(--default-white);
+  }
+
+  .heroLegalDisclaimer {
+    padding-left: 57px;
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 1.5;
+    color: var(--default-white);
+  }
 }
 
-.container {
-  position: relative;
-  padding: 41px 20px 52px 20px;
-  border-radius: 6px;
-  background-color: rgba(20, 30, 85, 0.6);
-  background-image: linear-gradient(
-      rgba(20, 30, 85, 0.6),
-      rgba(20, 30, 85, 0.6)
-    ),
-    url(/images/hero/stadium-1x.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-	overflow: hidden;
+/* ____________________________Tablet styles____________________________ */
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 41px 20px 52px 20px;
+  }
+
+  .heroWaveDecoration {
+    left: 50%;
+  }
+
+  .heroPlayerDecoration {
+    bottom: -12%;
+    right: 20%;
+    width: 284px;
+    height: 384px;
+  }
+
+  .heroRatingWrap {
+    margin-bottom: 15px;
+  }
+
+  .heroScore {
+    margin-right: 8px;
+    font-size: 20px;
+  }
+
+  .heroRatingIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .heroRating {
+    gap: 6px;
+  }
+
+  .heroTitle {
+    width: 500px;
+  }
 }
 
-.heroWaveDecoration {
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  height: 384px;
-  width: 925px;
-  border-radius: 6px;
-  transform: translateX(-50%);
-}
+/* ____________________________Desktop styles____________________________ */
+@media screen and (min-width: 1240px) {
+  .container {
+    padding: 41px 20px 52px 20px;
+  }
 
-.heroPlayerDecoration {
-  position: absolute;
-  bottom: 0px;
-  right: 46px;
-  width: 284px;
-  height: 384px;
-}
+  .heroWaveDecoration {
+    left: 50%;
+  }
 
-.heroContentWrap {
-  position: relative;
-  z-index: 777;
-}
+  .heroPlayerDecoration {
+    position: absolute;
+    bottom: 0px;
+    right: 46px;
+    width: 284px;
+    height: 384px;
+  }
 
-.heroRatingWrap {
-  display: flex;
-  align-items: center;
-  margin-bottom: 35px;
-}
+  .heroRatingWrap {
+    margin-bottom: 35px;
+  }
 
-.heroScore {
-  margin-right: 8px;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.2;
-  color: #fff;
-}
+  .heroScore {
+    font-size: 24px;
+  }
 
-.heroRating {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.heroRatingIcon {
-  width: 24px;
-  height: 24px;
-  fill: #ffc512;
-}
-
-.heroTitle {
-  width: 538px;
-  margin-bottom: 16px;
-}
-
-.heroCustomBtn {
-  margin-bottom: 10px;
-  border: 1px solid #fff;
-}
-
-.heroLegalDisclaimer {
-  padding-left: 57px;
-  font-weight: 400;
-  font-size: 6px;
-  line-height: 1.5;
-  color: #fff;
+  .heroTitle {
+    width: 538px;
+  }
 }

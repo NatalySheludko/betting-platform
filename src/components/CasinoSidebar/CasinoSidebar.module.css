@@ -1,96 +1,107 @@
-.section {
-  padding-top: 10px;
+/* ____________________________Mobile styles____________________________ */
+@media screen and (min-width: 320px) {
+  .section {
+    display: none;
+  }
 }
 
-.container {
-  position: relative;
-  border-radius: 6px;
-  background-color: #fff;
-}
+/* ____________________________Desktop styles____________________________ */
+@media screen and (min-width: 1240px) {
+  .section {
+    display: block;
+		padding-top: 10px;
+  }
 
-.casinoSidebarTitle {
-  padding: 20px 116px;
-  position: relative;
-  bottom: 11px;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.2;
-  text-transform: uppercase;
-  color: #fcfcfc;
-  background-color: #192a32;
-}
+  .container {
+    position: relative;
+    border-radius: 6px;
+    background-color: var(#ffffff);
+  }
 
-.sidebarMenu {
-  padding: 12px 25px;
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 0px 0px 6px 6px;
-  gap: 10px;
-}
+  .casinoSidebarTitle {
+    padding: 20px 116px;
+    position: relative;
+    bottom: 11px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--lightest-gray);
+    background-color: var(--dark);
+  }
 
-.sidebarMenuItem {
-  position: relative;
-  width: calc((100% - 10px) / 2);
-  overflow: hidden;
-}
+  .sidebarMenu {
+    padding: 12px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0px 0px 6px 6px;
+    gap: 10px;
+  }
 
-.itemOverlay {
-  position: absolute;
-  max-width: 120px;
-  max-height: 130px;
-  padding: 17px 20px 8px 20px;
-  top: 0;
-  left: 0;
-  transform: translateY(100%);
-  border-radius: 6px;
-  overflow: auto;
-  background-color: rgba(26, 55, 105, 0.8);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  .sidebarMenuItem {
+    position: relative;
+    width: calc((100% - 10px) / 2);
+    overflow: hidden;
+  }
 
-.sidebarMenuItem:hover .itemOverlay {
-  transform: translateY(0);
-}
+  .itemOverlay {
+    position: absolute;
+    max-width: 120px;
+    max-height: 130px;
+    padding: 17px 20px 8px 20px;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    border-radius: 6px;
+    overflow: auto;
+    background-color: var(--background-overlay);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.sidebarMenuItemImg {
-  width: 120px;
-  height: 130px;
-  border-radius: 6px;
-  background-color: lightgray;
-}
+  .sidebarMenuItem:hover .itemOverlay {
+    transform: translateY(0);
+  }
 
-.itemWrapTitle {
-  margin-bottom: 5px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.2;
-  text-transform: uppercase;
-  color: #fcfcfc;
-}
+  .sidebarMenuItemImg {
+    width: 120px;
+    height: 130px;
+    border-radius: 6px;
+    background-color: var(--green-gray-light);
+  }
 
-.itemWrapTransparentBtn {
-  padding: unset;
-  height: unset;
-  margin-bottom: 3px;
-  line-height: 1.3;
-  text-transform: unset;
-  color: #2cb154;
-  background-color: transparent;
-}
+  .itemWrapTitle {
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--lightest-gray);
+  }
 
-.itemWrapText {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 3px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #fcfcfc;
-}
+  .itemWrapTransparentBtn {
+    padding: unset;
+    height: unset;
+    margin-bottom: 3px;
+    line-height: 1.3;
+    text-transform: unset;
+    color: var(--green);
+    background-color: transparent;
+  }
 
-.itemWrapCustomBtn {
-  height: 30px;
-  font-size: 12px;
+  .itemWrapText {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--lightest-gray);
+  }
+
+  .itemWrapCustomBtn {
+    height: 30px;
+    font-size: 12px;
+  }
 }

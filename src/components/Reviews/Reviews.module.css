@@ -1,99 +1,152 @@
-.section {
-  padding-top: 10px;
-  padding-bottom: 10px;
+/* ____________________________Mobile styles____________________________ */
+@media screen and (min-width: 320px) {
+  .section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .container {
+    padding: 14px 20px 20px 10px;
+    border-radius: 6px;
+    background-color: var(--default-white);
+  }
+
+  .reviewsTitleWrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .reviewsTitle {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+
+  .reviewsBtnMenu {
+    display: flex;
+  }
+
+  .reviewsBtnMenuItem:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .reviewsBtn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--grey-blue);
+    box-shadow: var(--btn-shadow);
+  }
+
+  .reviewsBtnIcon {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 17px;
+    height: 17px;
+    stroke: #192a32;
+  }
+
+  .reviewsMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .reviewsMenuItem {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 300px;
+    padding: 12px 10px 12px 12px;
+    border-radius: 6px;
+    background-color: #e2eaf7;
+  }
+
+  .menuItemAvatar {
+    border-radius: 8px;
+    width: 59px;
+    height: 63px;
+    background-color: lightgray;
+  }
+
+  .itemContentWrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .itemTitle {
+    margin-right: 22px;
+    width: 100px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .itemIconRating {
+    margin-right: 6px;
+    width: 14px;
+    height: 13px;
+    fill: var(--dark);
+  }
+
+  .itemScore {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+  }
 }
 
-.container {
-  padding: 20px 20px 26px 20px;
-  border-radius: 6px;
-  background-color: #fff;
+/* ____________________________Tablet styles____________________________ */
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 20px 20px 26px 20px;
+  }
+
+  .reviewsTitle {
+    margin-right: 70px;
+    font-size: 40px;
+  }
+
+  .reviewsBtnMenu {
+    display: flex;
+  }
+
+  .reviewsBtnMenuItem:not(:last-child) {
+    margin-right: 17px;
+  }
+
+  .reviewsMenu {
+    flex-direction: unset;
+    gap: 19px;
+  }
+
+  .reviewsMenuItem {
+    gap: 31px;
+    width: 433px;
+    padding: 32px 20px 32px 32px;
+  }
+
+  .menuItemAvatar {
+    width: 109px;
+    height: 113px;
+  }
+
+  .itemTitle {
+    width: 100px;
+  }
+
+  .itemIconRating {
+    width: 16px;
+    height: 15px;
+  }
 }
 
-.reviewsTitleWrap {
-  display: flex;
-  align-items: center;
+/* ____________________________Desktop styles____________________________ */
+@media screen and (min-width: 1240px) {
+  .itemTitle {
+    width: 172px;
+  }
 }
-
-.reviewsTitle {
-  margin-right: 70px;
-  font-size: 40px;
-}
-
-.reviewsBtnMenu{
-	display: flex;
-}
-
-.reviewsBtnMenuItem:not(:last-child) {
-  margin-right: 17px;
-}
-
-.reviewsBtn {
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 100px;
-  background-color: #e2eaf7;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-
-.reviewsBtnIcon {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  width: 17px;
-  height: 17px;
-  stroke: #192a32;
-}
-
-.reviewsMenu {
-  display: flex;
-  justify-content: center;
-  gap: 19px;
-}
-
-.reviewsMenuItem {
-  display: flex;
-  align-items: center;
-  gap: 31px;
-  width: 433px;
-  padding: 32px 20px 32px 32px;
-  border-radius: 6px;
-  background-color: #e2eaf7;
-}
-
-.menuItemAvatar {
-  border-radius: 8px;
-  width: 109px;
-  height: 113px;
-  background-color: lightgray;
-}
-
-.itemContentWrap {
-  display: flex;
-  align-items: center;
-}
-
-.itemTitle {
-  margin-right: 22px;
-  width: 172px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.itemIconRating {
-  margin-right: 6px;
-  width: 16px;
-  height: 15px;
-  fill: #192a32;
-}
-
-.itemScore {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.2;
-}
-
-
-

@@ -1,95 +1,125 @@
-.section {
-  padding-top: 10px;
-  padding-bottom: 10px;
+/* ____________________________Mobile styles____________________________ */
+@media screen and (min-width: 320px) {
+  .section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .container {
+    position: relative;
+    padding: 15px 16px 17px 16px;
+    border-radius: 6px;
+    background-color: var(--background-dark);
+    background-image: linear-gradient(
+        var(--background-dark),
+        var(--background-dark)
+      ),
+      url(/images/hero/stadium-1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  .heroWaveDecoration {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    height: 385px;
+    width: 1241px;
+    border-radius: 6px;
+    transform: translateX(-50%);
+  }
+
+  .heroSlotDecoration {
+    position: absolute;
+    bottom: 0px;
+    right: 0%;
+    width: 160px;
+    height: 160px;
+  }
+
+  .heroMenu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .heroMenuItem {
+    position: relative;
+  }
+
+  .heroMenuItem:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    width: 1.1px;
+    height: 15px;
+    background-color: var(--default-white);
+    transform: translateY(-50%);
+  }
+
+  .heroLink {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--default-white);
+    opacity: 0.84;
+  }
+
+  .active {
+    color: var(--default-white);
+    opacity: 1;
+  }
+
+  .heroContentWrap {
+    position: relative;
+    z-index: 777;
+  }
+
+  .heroTitle {
+    width: 300px;
+    margin-bottom: 16px;
+    font-size: 20px;
+  }
+
+  .heroCustomBtn {
+    margin-bottom: 10px;
+    border: 1px solid var(--default-white);
+  }
+
+  .heroLegalDisclaimer {
+    padding-left: 57px;
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 1.5;
+    color: var(--default-white);
+  }
 }
 
-.container {
-  position: relative;
-  padding: 45px 26px 47px 26px;
-  border-radius: 6px;
-  background-color: rgba(20, 30, 85, 0.6);
-  background-image: linear-gradient(
-      rgba(20, 30, 85, 0.6),
-      rgba(20, 30, 85, 0.6)
-    ),
-    url(/images/hero/stadium-1x.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-	overflow: hidden;
-}
+/* ____________________________Tablet styles____________________________ */
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 45px 26px 47px 26px;
+  }
 
-.heroWaveDecoration {
-  position: absolute;
-  top: -3.5%;
-  left: 50%;
-  height: 385px;
-  width: 1241px;
-  border-radius: 6px;
-  transform: translateX(-50%);
-}
+  .heroWaveDecoration {
+    top: -3.5%;
+  }
 
-.heroSlotDecoration {
-  position: absolute;
-  bottom: 0px;
-  right: 97px;
-  width: 433px;
-  height: 373px;
-}
+  .heroSlotDecoration {
+    right: 97px;
+    width: 433px;
+    height: 373px;
+  }
 
-.heroMenu {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
+  .heroTitle {
+    width: 629px;
+    font-size: 48px;
+  }
 
-.heroMenuItem {
-  position: relative;
-}
-
-.heroMenuItem:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: -10px;
-  width: 1.1px;
-  height: 15px;
-  background-color: white;
-  transform: translateY(-50%);
-}
-
-.heroLink {
-  font-weight: 400;
-  font-size: 16px;
-  color: #fff;
-  opacity: 0.84;
-}
-
-.active {
-  color: white;
-  opacity: 1;
-}
-
-.heroContentWrap {
-  position: relative;
-  z-index: 777;
-}
-
-.heroTitle {
-  width: 629px;
-  margin-bottom: 16px;
-  font-size: 48px;
-}
-
-.heroCustomBtn {
-  margin-bottom: 10px;
-  border: 1px solid #fff;
-}
-
-.heroLegalDisclaimer {
-  padding-left: 57px;
-  font-weight: 400;
-  font-size: 6px;
-  line-height: 1.5;
-  color: #fff;
+  .heroCustomBtn {
+    margin-bottom: 10px;
+    border: 1px solid var(--default-white);
+  }
 }
