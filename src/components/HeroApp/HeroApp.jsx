@@ -21,14 +21,14 @@ export default function HeroApp() {
         <img
           src="/images/decorative-bg/poker-symb-1x.png"
           srcSet="
-					/images/decorative-bg/poker-symb-1x.png 1x, /images/decorative-bg/poker-symb-2x.png 2x"
+	  /images/decorative-bg/poker-symb-1x.png 1x, /images/decorative-bg/poker-symb-2x.png 2x"
           alt="Decorative Poker Carts Symbols"
           className={css.appCartsSymbDecoration}
         />
         <img
           src="/images/decorative-bg/bet-1x.png"
           srcSet="
-					/images/decorative-bg/bet-1x.png 1x, /images/decorative-bg/bet-2x.png 2x"
+	  /images/decorative-bg/bet-1x.png 1x, /images/decorative-bg/bet-2x.png 2x"
           alt="Decorative Mobile Bets"
           className={css.appBetsDecoration}
         />
