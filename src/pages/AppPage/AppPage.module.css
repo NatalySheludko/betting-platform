@@ -1,3 +1,5 @@
+/* ____________________________Mobile styles____________________________ */
+@media screen and (min-width: 320px) {
 .appPageContainer {
   position: relative;
   overflow: hidden;
@@ -7,10 +9,24 @@
 .contentContainer {
   position: relative;
   margin: 0 auto;
-  max-width: 1240px;
+  max-width: 320px;
   padding-top: 10px;
   gap: 20px;
   z-index: 2;
+}
+}
+
+/* ____________________________Tablet styles____________________________ */
+@media screen and (min-width: 768px) {
+.contentContainer {
+  max-width: 768px;
+}
+}
+
+/* ____________________________Desktop styles____________________________ */
+@media screen and (min-width: 1240px) {
+.contentContainer {
+  max-width: 1240px;
 }
 
 .appFirstRadialCircle {
@@ -47,4 +63,5 @@
     rgba(0, 83, 123, 0) 100%
   );
   border-radius: 50%;
+}
 }
