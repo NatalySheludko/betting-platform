@@ -97,9 +97,9 @@
   }
 
   .menuItemIcon {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 20px;
     height: 20px;
     margin-right: 6px;
@@ -241,7 +241,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-		right: 0%;
+    right: 0%;
     top: -20%;
   }
 
