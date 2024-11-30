@@ -19,7 +19,7 @@ export default function HomePage() {
     <div className={css.homePageContainer}>
       <div className={css.homeFirstRadialCircle}></div>
       <div className={css.homeSecondRadialCircle}></div>
-			<div className={css.homeThirdRadialCircle}></div>
+      <div className={css.homeThirdRadialCircle}></div>
 			
       <div className={css.contentContainer}>
         <MobileApp />
@@ -33,7 +33,7 @@ export default function HomePage() {
         <CustomSupport />
         <Faq contentWidth="925px" />
         <Footer />
-			</div>
+      </div>
 			
       <div className={css.sidebarContainer}>
         <EventSidebar />
