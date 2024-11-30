@@ -14,14 +14,14 @@ export default function BonusOffer() {
         <img
           src="/images/decorative-bg/circle-1x.png"
           srcSet="
-					/images/decorative-bg/circle-1x.png 1x, /images/decorative-bg/circle-2x.png 2x"
+	  /images/decorative-bg/circle-1x.png 1x, /images/decorative-bg/circle-2x.png 2x"
           alt="Decorative Circle"
           className={css.bonusCircleDecoration}
         />
         <img
           src="/images/decorative-bg/poker-1x.png"
           srcSet="
-					/images/decorative-bg/poker-1x.png 1x, /images/decorative-bg/poker-2x.png 2x"
+	  /images/decorative-bg/poker-1x.png 1x, /images/decorative-bg/poker-2x.png 2x"
           alt="Poker Card"
           className={css.bonusCardDecoration}
         />
