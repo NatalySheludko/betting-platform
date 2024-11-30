@@ -21,9 +21,9 @@
   }
 
   .factsMenuItem {
-		display: flex;
-		align-items: center;
-		width: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
     padding: 4px 4px;
     border-bottom: 1px solid var(--grey-darkest);
   }
@@ -47,7 +47,7 @@
   }
 
   .menuItemText {
-   text-align: left;
+    text-align: left;
   }
 }
 
