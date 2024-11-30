@@ -65,4 +65,8 @@
     flex-direction: row;
     gap: 95px;
   }
+
+	.bonusesWrapper {
+		max-width: 686px;
+	}
 }

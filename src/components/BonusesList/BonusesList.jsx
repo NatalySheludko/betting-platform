@@ -14,7 +14,7 @@ export default function BonusesList() {
               <div className={css.sportEquipmentWrap}>
                 <img className={css.sportEquipmentImg} src={imgSrc} alt={alt} />
               </div>
-              <div>
+              <div className={css.bonusesWrapper}>
                 <h3 className={css.bonusesTitle}>bonus name</h3>
                 <p className={css.bonusesText}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
