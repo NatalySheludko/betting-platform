@@ -21,7 +21,7 @@ export default function HeroBonus() {
         <img
           src="/images/decorative-bg/slot-1x.png"
           srcSet="
-					/images/decorative-bg/slot-1x.png 1x, /images/decorative-bg/slot-2x.png 2x"
+	  /images/decorative-bg/slot-1x.png 1x, /images/decorative-bg/slot-2x.png 2x"
           alt="Decorative Casino Slot"
           className={css.heroSlotDecoration}
         />
