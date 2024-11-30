@@ -74,7 +74,7 @@
   .liveBetMenuItemDecimal::before {
     counter-increment: listCounter;
     content: counter(listCounter);
-		font-size: 12px;
+    font-size: 12px;
     margin-right: 4px;
     color: #2e9344;
   }
@@ -94,12 +94,12 @@
     padding: 32px 20px;
   }
 
-	.liveBetMenuItem::before {
-		font-size: 14px;
+  .liveBetMenuItem::before {
+    font-size: 14px;
   }
 
   .liveBetMenuItemDecimal::before {
-		font-size: 14px;
+    font-size: 14px;
   }
 
   .sportsbookMenuItem:not(:last-child) {
@@ -122,12 +122,12 @@
     padding: 32px 20px;
   }
 
-	.liveBetMenuItem::before {
-		font-size: 16px;
+  .liveBetMenuItem::before {
+    font-size: 16px;
   }
 
   .liveBetMenuItemDecimal::before {
-		font-size: 15px;
+    font-size: 15px;
   }
 
   .sportsbookMenuItem,
