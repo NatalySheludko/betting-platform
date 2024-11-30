@@ -17,7 +17,7 @@ export default function Hero() {
         <img
           src="/images/decorative-bg/player-1x.png"
           srcSet="
-					/images/decorative-bg/player-1x.png 1x, /images/decorative-bg/player-2x.png 2x"
+	  /images/decorative-bg/player-1x.png 1x, /images/decorative-bg/player-2x.png 2x"
           alt="Decorative Player"
           className={css.heroPlayerDecoration}
         />
