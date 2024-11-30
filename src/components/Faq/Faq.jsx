@@ -18,15 +18,6 @@ export default function Faq({ contentWidth }) {
     });
   };
 
-  // const getButtonWidth = () => {
-  //   if (contentWidth === '925px') {
-  //     return '884px';
-  //   } else if (contentWidth === '1240px') {
-  //     return '1199px';
-  //   }
-  //   return '884px';
-  // };
-
   return (
     <section className={css.section}>
       <div
