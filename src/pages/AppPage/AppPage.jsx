@@ -11,7 +11,7 @@ export default function AppPage() {
   return (
     <div className={css.appPageContainer}>
       <div className={css.appFirstRadialCircle}></div>
-			<div className={css.appSecondRadialCircle}></div>
+      <div className={css.appSecondRadialCircle}></div>
 			
       <div className={css.contentContainer}>
         <HeroApp />
