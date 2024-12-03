@@ -15,7 +15,7 @@
   .container {
     position: relative;
     border-radius: 6px;
-    background-color: var(#ffffff);
+    background-color: var(--default-white);
   }
 
   .casinoSidebarTitle {
