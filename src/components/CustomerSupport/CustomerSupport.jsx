@@ -77,7 +77,7 @@ export default function CustomerSupport() {
                 className={css.customerSupportMenuItem}
                 aria-label={item.ariaLabel}
               >
-                <span className={css.menuItemIcon}>{item.icon}</span>
+                <span className={css.menuIcon}>{item.icon}</span>
                 <h3 className={css.menuItemTitle}>{item.title}</h3>
                 {index < 2 ? (
                   <a

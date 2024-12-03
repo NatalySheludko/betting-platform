@@ -73,11 +73,13 @@
     color: var(--dark);
   }
 
-  .menuItemIcon svg,
-  .menuItemIcon img {
-    width: 14px;
-    height: 14px;
-    margin-right: 4px;
+  .menuItemIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
     stroke: var(--dark);
   }
 
@@ -96,17 +98,19 @@
     margin-bottom: 16px;
   }
 
-  .menuItemIcon {
+  .menuIcon svg,
+  .menuIcon img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20px;
-    height: 20px;
-    margin-right: 6px;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
     stroke: var(--dark);
   }
 
   .menuItemTitle {
+    width: 70px;
     margin-right: 10px;
     font-weight: 400;
     font-size: 13px;
@@ -114,7 +118,6 @@
   }
 
   .menuItemContact {
-    width: 190px;
     text-align: start;
     font-weight: 400;
     font-size: 12px;
@@ -130,6 +133,7 @@
 
   .customerSupportMenu li:last-child .menuItemContact {
     position: relative;
+    padding: 0;
     font-weight: 600;
     color: var(--green);
     background-color: transparent;
@@ -186,14 +190,11 @@
 /* ____________________________Tablet styles____________________________ */
 @media screen and (min-width: 768px) {
   .container {
-    padding: 10px 10px;
+    padding: 20px;
   }
 
   .supportTitle {
-    margin-bottom: 24px;
-  }
-
-  .supportText {
+    width: 200px;
     margin-bottom: 24px;
   }
 
@@ -207,10 +208,8 @@
     font-size: 16px;
   }
 
-  .menuItemIcon svg,
-  .menuItemIcon img {
-    width: 24px;
-    height: 24px;
+  .menuItemIcon,
+  .menuItemIcon {
     margin-right: 10px;
   }
 
@@ -218,18 +217,11 @@
     margin-bottom: 31px;
   }
 
-  .menuItemIcon {
-    width: 24px;
-    height: 24px;
-  }
-
   .menuItemTitle {
     width: 200px;
-    margin-right: 10px;
   }
 
   .menuItemContact {
-    text-align: start;
     width: 400px;
   }
 
@@ -259,7 +251,24 @@
 
 /* ____________________________Desktop styles____________________________ */
 @media screen and (min-width: 1240px) {
-  .customerSupportMenuItem {
-    width: 885px;
+  .menuItemIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .menuIcon svg,
+  .menuIcon img {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+  }
+
+  .menuItemTitle {
+    font-size: 16px;
+  }
+
+  .menuItemContact {
+    width: 480px;
+    font-size: 16px;
   }
 }
